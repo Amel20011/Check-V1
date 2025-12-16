@@ -1,0 +1,17 @@
+{
+  "name": "proyek-bot",
+  "version": "1.2.0",
+  "type": "module",
+  "description": "Liviaa🌷 WhatsApp bot aesthetic using ye-bail with interactive buttons, list message, pairing endpoint, permissions, and antispam.",
+  "main": "index.js",
+  "engines": { "node": ">=20.0.0" },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "NODE_ENV=development node --watch index.js"
+  },
+  "dependencies": {
+    "@yemobyte/ye-bail": "^1.0.0",
+    "pino": "^9.0.0",
+    "fs-extra": "^11.2.0"
+  }
+}
