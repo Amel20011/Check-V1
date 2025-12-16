@@ -1,6 +1,7 @@
 export const BOT = {
   name: "Liviaa🌷",
-  ownerNumber: "13658700681", // +1 (365) 870-0681
+  ownerNumber: "12894480825",         // Owner (US/CA), no '+'
+  pairingNumber: "62895800508215",    // Pairing (Indonesia), no '+'
   prefix: ".",
   mode: "public", // "public" | "self"
   footer: "ᥫ᭡ ⋆˚꩜｡ Liviaa🌷 𓂃💗",
