@@ -49,6 +49,17 @@ export async function routeCommand(sock, m, body) {
         await mod.default(sock, m, body);
         return;
       }
+      if (["mdstatus","mdsync","mddevices","multidevice"].includes(cmd)) {
+        let modFile;
+        if (cmd === "mdstatus") modFile = "status";
+        else if (cmd === "mdsync") modFile = "sync";
+        else if (cmd === "mddevices") modFile = "devices";
+        else modFile = "status";
+
+        const mod = await import(`../multidevice/${modFile}.js`);
+        await mod.default(sock, m, { BOT });
+        return;
+      }
     } catch (e) {
       await sock.sendMessage(from, { text: "🌹 Maaf, perintah belum tersedia." });
     }
